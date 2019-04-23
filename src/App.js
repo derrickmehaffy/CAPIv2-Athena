@@ -3,6 +3,11 @@ import { Admin, Resource } from 'react-admin';
 import simpleRestProvider from './utils/ra-strapi-rest';
 
 import {
+    systemList,
+    bodyList
+} from './models/steller'
+
+import {
     typeList,
     typeGuardianList,
     typeThargoidList
@@ -11,10 +16,20 @@ import {
 import Dashboard from './pages/dashboard';
 import NotFound from './pages/notfound';
 
-const dataProvider = simpleRestProvider('https://api.canonn.tech:2083');
+import { createMuiTheme } from '@material-ui/core/styles';
+
+const theme = createMuiTheme({
+    palette: {
+        type: 'dark'
+    },
+});
+
+const dataProvider = simpleRestProvider('https://api.canonn.tech');
 
 const App = () => (
-    <Admin dashboard={Dashboard} catchAll={NotFound} title="Canonn APIv2" dataProvider={dataProvider}>
+    <Admin theme={theme} dashboard={Dashboard} catchAll={NotFound} title="Canonn APIv2" dataProvider={dataProvider}>
+        <Resource name="systems" list={systemList} />
+        <Resource name="bodies" list={bodyList} />
         <Resource name="aptypes" list={typeList} />
         <Resource name="bmtypes" list={typeList} />
         <Resource name="bttypes" list={typeList} />
