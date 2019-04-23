@@ -5,6 +5,7 @@
   "repository": "https://github.com/canonn-science/CAPIv2-Athena",
   "private": true,
   "dependencies": {
+    "prettier": "^1.17.0",
     "react": "^16.8.6",
     "react-admin": "^2.8.6",
     "react-dom": "^16.8.6",
