@@ -10,6 +10,9 @@ const regionList = props => (
   <List {...props} sort={{ field: 'id', order: 'ASC' }}>
     <Datagrid>
       <NumberField source="id" label="ID" textAlign="Left" />
+      <TextField source="name" label="Name" />
+      <TextField source="journalName" label="Journal Name" />
+      <NumberField source="regionID" label="Region ID" textAlign="Left" />
     </Datagrid>
   </List>
 );
