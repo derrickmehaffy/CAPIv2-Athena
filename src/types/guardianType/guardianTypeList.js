@@ -10,7 +10,7 @@ const styles = {
 const guardianTypeList = props => (
   <List {...props} sort={{ field: 'id', order: 'ASC' }}>
     <Datagrid>
-      <NumberField source="id" label="ID" textAlign="Left" />
+      <NumberField source="id" label="ID" textAlign="left" />
       <TextField source="type" label="Type" />
     </Datagrid>
   </List>
