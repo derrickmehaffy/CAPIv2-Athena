@@ -20,6 +20,9 @@ import ExpandMore from '@material-ui/icons/ExpandMore';
 
 import Collapse from '@material-ui/core/Collapse';
 
+const collapseStyle = { paddingLeft: '10px' }
+const expandIconStyle = { color: 'rgba(255,255,255,0.85)' }
+
 class CollapsibleMenu extends React.Component {
 
     constructor(props) {
@@ -30,7 +33,7 @@ class CollapsibleMenu extends React.Component {
         }
     }
 
-    // toggle subMenu show/hide
+    // Toggle subMenu show/hide on click
     collapseClick = (toggleMenu) => {
 
         let menu = this.state.submenus.find( m => {
@@ -40,9 +43,7 @@ class CollapsibleMenu extends React.Component {
         if(menu) {
             menu.collapsed = !menu.collapsed;
         }
-
-        // This could really use some refactoring: do not rerender the whole menu
-        // Split into smaller components
+        
         this.setState({
             submenus: [ ...this.state.submenus ]
         });
@@ -53,7 +54,6 @@ class CollapsibleMenu extends React.Component {
     renderCollapsible = (parent) => {
 
         // This is based on https://material-ui.com/api/list/
-        // Would probably use some better styling/structure from material-design
 
         const { resources } = this.props;
 
@@ -63,13 +63,13 @@ class CollapsibleMenu extends React.Component {
             let resourceKeys = parent.resources;
 
             return(
-                <List key={'list/'+parent.slug}>
-                    <ListItem key={parent.slug} button onClick={ () => { this.collapseClick(parent) } }>
+                <React.Fragment key={'fragment/'+parent.slug}>
+                    <ListItem key={'menu/'+parent.slug} button onClick={ () => { this.collapseClick(parent) } }>
                         <ListItemText primary={parent.label} />
-                        {parent.collapsed ? <ExpandLess /> : <ExpandMore />}
+                        {parent.collapsed ? <ExpandLess style={expandIconStyle} /> : <ExpandMore style={expandIconStyle} />}
                     </ListItem>
-                    <Collapse in={parent.collapsed} timeout="auto" unmountOnExit>
-                        <List component="div">
+                    <Collapse key={'collapse/'+parent.slug} in={parent.collapsed} timeout="auto" unmountOnExit style={collapseStyle}>
+                        <List component="div" disablePadding>
                             {
                                 resourceKeys.map( rk => {
                                 
@@ -93,7 +93,7 @@ class CollapsibleMenu extends React.Component {
                         </List>
                     </Collapse>
                 
-                </List>
+                </React.Fragment>
             )
 
         } else {
@@ -150,11 +150,7 @@ class CollapsibleMenu extends React.Component {
 
         const { resources } = this.props;
 
-        return (
-            <List>
-                { this.renderMenu(menuStructure, resources) }
-            </List>
-        )
+        return this.renderMenu(menuStructure, resources);
 
     }
 }
