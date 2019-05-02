@@ -153,7 +153,7 @@ const App = () => (
 			options={{ label: "GR Artifacts" }}
 		/>
 		<Resource
-			name="grcodexcategory"
+			name="grcodexcategories"
 			{...grCodexCategories}
 			options={{ label: "GR Codex Categories" }}
 		/>
@@ -163,12 +163,12 @@ const App = () => (
 			options={{ label: "GR Codex Data" }}
 		/>
 		<Resource
-			name="grobelisk"
+			name="grobelisks"
 			{...grObelisks}
 			options={{ label: "GR Obelisks" }}
 		/>
 		<Resource
-			name="grobeliskgroup"
+			name="grobeliskgroups"
 			{...grObeliskGroups}
 			options={{ label: "GR Obelisk Groups" }}
 		/>
@@ -178,7 +178,7 @@ const App = () => (
 			options={{ label: "GS Sites" }}
 		/>
 		<Resource
-			name="gsactivegsoups"
+			name="gsactivegroups"
 			{...gsActiveGroups}
 			options={{ label: "GS Active Groups" }}
 		/>
@@ -193,7 +193,7 @@ const App = () => (
 			options={{ label: "GS Artifacts" }}
 		/>
 		<Resource
-			name="gscodexcategory"
+			name="gscodexcategories"
 			{...gsCodexCategories}
 			options={{ label: "GS Codex Categories" }}
 		/>
@@ -203,12 +203,12 @@ const App = () => (
 			options={{ label: "GS Codex Data" }}
 		/>
 		<Resource
-			name="gsobelisk"
+			name="gsobelisks"
 			{...gsObelisks}
 			options={{ label: "GS Obelisks" }}
 		/>
 		<Resource
-			name="gsobeliskgsoup"
+			name="gsobeliskgroups"
 			{...gsObeliskGroups}
 			options={{ label: "GS Obelisk Groups" }}
 		/>

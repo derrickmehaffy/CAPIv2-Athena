@@ -1,8 +1,8 @@
 import CategoryIcon from '@material-ui/icons/Edit';
 
-import defaultSiteList from './defaultSiteList';
+import gsActiveGroupList from './gsActiveGroupList';
 
 export default {
-    list: defaultSiteList,
+    list: gsActiveGroupList,
     icon: CategoryIcon,
 };

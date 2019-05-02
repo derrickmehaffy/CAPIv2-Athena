@@ -81,29 +81,45 @@ const menuStructure = [
             collapsed: false             
         },
 
+    {
+        slug: 'sites_meta',
+        parent: null,
+        label: 'Site Metadata',
+        resources: [],
+        collapsed: false
+    },
+
         {
-            slug: 'sites_meta',
-            parent: 'sites',
-            label: 'Site Metadata',
-            resources: [],
+            slug: 'site_meta_guardian_ruins',
+            parent: 'sites_meta',
+            label: 'Guardian Ruins',
+            resources: [
+                'gractivegroups',
+                'gractiveobelisks',
+                'grartifacts',
+                'grcodexcategories',
+                'grcodexdata',
+                'grobelisks',
+                'grobeliskgroups'
+            ],
             collapsed: false
         },
 
-            {
-                slug: 'site_meta_guardian_ruins',
-                parent: 'sites_meta',
-                label: 'Guardian Ruins',
-                resources: [],
-                collapsed: false
-            },
-
-            {
-                slug: 'site_meta_guardian_structures',
-                parent: 'sites_meta',
-                label: 'Guardian Structures',
-                resources: [],              
-                collapsed: false
-            },
+        {
+            slug: 'site_meta_guardian_structures',
+            parent: 'sites_meta',
+            label: 'Guardian Structures',
+            resources: [
+                'gsactivegroups',
+                'gsactiveobelisks',
+                'gsartifacts',
+                'gscodexcategories',
+                'gscodexdata',
+                'gsobelisks',
+                'gsobeliskgroups'
+            ],              
+            collapsed: false
+        },
 
     {
         slug: 'reports',            // slug used as id for the submenu, has to be unique

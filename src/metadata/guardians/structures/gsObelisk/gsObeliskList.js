@@ -4,12 +4,12 @@ import withStyles from '@material-ui/core/styles/withStyles';
 
 const styles = {};
 
-const grObeliskList = props => (
+const gsObeliskList = props => (
   <List {...props} sort={{ field: 'id', order: 'ASC' }}>
     <Datagrid>
       <NumberField source="id" label="ID" textAlign="left" />
-      <ChipField source="grType.type" label="Type" />
-      <ChipField source="grObeliskGroup.groupName" label="Group" />
+      <ChipField source="gsType.type" label="Type" />
+      <ChipField source="gsObeliskGroup.groupName" label="Group" />
       <NumberField source="obeliskNumber" label="Obelisk Number" textAlign="left" />
       <BooleanField source="broken" label="Broken" />
       <BooleanField source="verified" label="Verified" />
@@ -17,4 +17,4 @@ const grObeliskList = props => (
   </List>
 );
 
-export default withStyles(styles)(grObeliskList);
+export default withStyles(styles)(gsObeliskList);

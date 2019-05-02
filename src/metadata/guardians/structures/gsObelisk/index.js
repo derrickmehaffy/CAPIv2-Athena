@@ -1,8 +1,8 @@
 import CategoryIcon from '@material-ui/icons/Edit';
 
-import defaultSiteList from './defaultSiteList';
+import gsObeliskList from './gsObeliskList';
 
 export default {
-    list: defaultSiteList,
+    list: gsObeliskList,
     icon: CategoryIcon,
 };

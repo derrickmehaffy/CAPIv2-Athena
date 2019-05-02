@@ -4,13 +4,13 @@ import withStyles from '@material-ui/core/styles/withStyles';
 
 const styles = {};
 
-const grCodexCategoryList = props => (
+const gsArtifactList = props => (
   <List {...props} sort={{ field: 'id', order: 'ASC' }}>
     <Datagrid>
       <NumberField source="id" label="ID" textAlign="left" />
-      <TextField source="categoryName" label="Category" />
+      <TextField source="artifactName" label="Artifact" />
     </Datagrid>
   </List>
 );
 
-export default withStyles(styles)(grCodexCategoryList);
+export default withStyles(styles)(gsArtifactList);
