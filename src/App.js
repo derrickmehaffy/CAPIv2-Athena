@@ -95,47 +95,47 @@ const App = () => (
 		<Resource
 			name="apsites"
 			{...defaultSites}
-			options={{ label: "AP Sites" }}
+			options={{ label: "Amphora Plants (AP)" }}
 		/>
 		<Resource
 			name="bmsites"
 			{...defaultSites}
-			options={{ label: "BM Sites" }}
+			options={{ label: "Bark Mounds (BM)" }}
 		/>
 		<Resource
 			name="btsites"
 			{...defaultSites}
-			options={{ label: "BT Sites" }}
+			options={{ label: "Brain Trees (BT)" }}
 		/>
 		<Resource
 			name="cssites"
 			{...defaultSites}
-			options={{ label: "CS Sites" }}
+			options={{ label: "Crystalline Shards (CS)" }}
 		/>
 		<Resource
 			name="fgsites"
 			{...defaultSites}
-			options={{ label: "FG Sites" }}
+			options={{ label: "Fungal Gourds (FG)" }}
 		/>
 		<Resource
 			name="fmsites"
 			{...defaultSites}
-			options={{ label: "FM Sites" }}
+			options={{ label: "Fumaroles (FM)" }}
 		/>
 		<Resource
 			name="gbsites"
 			{...gbSites}
-			options={{ label: "GB Sites" }}
+			options={{ label: "Guardian Beacons (GB)" }}
 		/>
 		<Resource
 			name="gensites"
 			{...genSites}
-			options={{ label: "GEN Sites" }}
+			options={{ label: "Generation Ships (GEN)" }}
 		/>
 		<Resource
 			name="grsites"
 			{...grSites}
-			options={{ label: "GR Sites" }}
+			options={{ label: "Guardian Ruins (GR)" }}
 		/>
 		<Resource
 			name="gractivegroups"
@@ -175,7 +175,7 @@ const App = () => (
 		<Resource
 			name="gssites"
 			{...gsSites}
-			options={{ label: "GS Sites" }}
+			options={{ label: "Guardian Structures (GS)" }}
 		/>
 		<Resource
 			name="gsactivegroups"
@@ -215,172 +215,172 @@ const App = () => (
 		<Resource
 			name="gvsites"
 			{...defaultSites}
-			options={{ label: "GV Sites" }}
+			options={{ label: "Gas Vents (GV)" }}
 		/>
 		<Resource
 			name="gysites"
 			{...defaultSites}
-			options={{ label: "GY Sites" }}
+			options={{ label: "Geysers (GY)" }}
 		/>
 		<Resource
 			name="lssites"
 			{...defaultSites}
-			options={{ label: "LS Sites" }}
+			options={{ label: "Lava Spouts (LS)" }}
 		/>
 		<Resource
 			name="tbsites"
 			{...tbSites}
-			options={{ label: "TB Sites" }}
+			options={{ label: "Thargoid Barnacles (TB)" }}
 		/>
 		<Resource
 			name="tssites"
 			{...tsSites}
-			options={{ label: "TS Sites" }}
+			options={{ label: "Thargoid Structures (TS)" }}
 		/>
 		<Resource
 			name="twsites"
 			{...defaultSites}
-			options={{ label: "TW Sites" }}
+			options={{ label: "Tube Worms (TW)" }}
 		/>
 		<Resource
 			name="apreports"
 			{...defaultReports}
-			options={{ label: "AP Reports" }}
+			options={{ label: "Amphora Plants (AP)" }}
 		/>
 		<Resource
 			name="bmreports"
 			{...defaultReports}
-			options={{ label: "BM Reports" }}
+			options={{ label: "Bark Mounds (BM)" }}
 		/>
 		<Resource
 			name="btreports"
 			{...defaultReports}
-			options={{ label: "BT Reports" }}
+			options={{ label: "Brain Trees (BT)" }}
 		/>
 		<Resource
 			name="csreports"
 			{...defaultReports}
-			options={{ label: "CS Reports" }}
-		/>
-		<Resource
-			name="gbreports"
-			{...defaultReports}
-			options={{ label: "GB Reports" }}
-		/>
-		<Resource
-			name="grreports"
-			{...defaultReports}
-			options={{ label: "GR Reports" }}
-		/>
-		<Resource
-			name="gsreports"
-			{...defaultReports}
-			options={{ label: "GS Reports" }}
+			options={{ label: "Crystalline Shards (CS)" }}
 		/>
 		<Resource
 			name="fgreports"
 			{...defaultReports}
-			options={{ label: "FG Reports" }}
+			options={{ label: "Fungal Gourds (FG)" }}
 		/>
 		<Resource
 			name="fmreports"
 			{...defaultReports}
-			options={{ label: "FM Reports" }}
+			options={{ label: "Fumaroles (FM)" }}
+		/>
+		<Resource
+			name="gbreports"
+			{...defaultReports}
+			options={{ label: "Guardian Beacons (GB)" }}
+		/>
+		<Resource
+			name="grreports"
+			{...defaultReports}
+			options={{ label: "Guardian Ruins (GR)" }}
+		/>
+		<Resource
+			name="gsreports"
+			{...defaultReports}
+			options={{ label: "Guardian Structures (GS)" }}
 		/>
 		<Resource
 			name="gvreports"
 			{...defaultReports}
-			options={{ label: "GV Reports" }}
+			options={{ label: "Gas Vents (GV)" }}
 		/>
 		<Resource
 			name="gyreports"
 			{...defaultReports}
-			options={{ label: "GY Reports" }}
+			options={{ label: "Geysers (GY)" }}
 		/>
 		<Resource
 			name="lsreports"
 			{...defaultReports}
-			options={{ label: "LS Reports" }}
+			options={{ label: "Lava Spouts (LS)" }}
 		/>
 		<Resource
 			name="tbreports"
 			{...defaultReports}
-			options={{ label: "TB Reports" }}
+			options={{ label: "Thargoid Barnacles (TB)" }}
 		/>
 		<Resource
 			name="tsreports"
 			{...defaultReports}
-			options={{ label: "TS Reports" }}
+			options={{ label: "Thargoid Structures (TS)" }}
 		/>
 		<Resource
 			name="twreports"
 			{...defaultReports}
-			options={{ label: "TW Reports" }}
+			options={{ label: "Tube Worms (TW)" }}
 		/>
 		<Resource
 			name="aptypes"
 			{...defaultTypes}
-			options={{ label: "AP Types" }}
+			options={{ label: "Amphora Plants (AP)" }}
 		/>
 		<Resource
 			name="bmtypes"
 			{...defaultTypes}
-			options={{ label: "BM Types" }}
+			options={{ label: "Bark Mounds (BM)" }}
 		/>
 		<Resource
 			name="bttypes"
 			{...defaultTypes}
-			options={{ label: "BT Types" }}
+			options={{ label: "Brain Trees (BT)" }}
 		/>
 		<Resource
 			name="cstypes"
 			{...defaultTypes}
-			options={{ label: "CS Types" }}
+			options={{ label: "Crystalline Shards (CS)" }}
 		/>
 		<Resource
 			name="fgtypes"
 			{...defaultTypes}
-			options={{ label: "FG Types" }}
+			options={{ label: "Fungal Gourds (FG)" }}
 		/>
 		<Resource
 			name="fmtypes"
 			{...defaultTypes}
-			options={{ label: "FM Types" }}
+			options={{ label: "Fumaroles (FM)" }}
 		/>
 		<Resource
 			name="grtypes"
 			{...guardianTypes}
-			options={{ label: "GR Types" }}
+			options={{ label: "Guardian Ruins (GR)" }}
 		/>
 		<Resource
 			name="gstypes"
 			{...guardianTypes}
-			options={{ label: "GS Types" }}
+			options={{ label: "Guardian Structures (GS)" }}
 		/>
 		<Resource
 			name="gvtypes"
 			{...defaultTypes}
-			options={{ label: "GV Types" }}
+			options={{ label: "Gas Vents (GV)" }}
 		/>
 		<Resource
 			name="gytypes"
 			{...defaultTypes}
-			options={{ label: "GY Types" }}
+			options={{ label: "Geysers (GY)" }}
 		/>
 		<Resource
 			name="lstypes"
 			{...defaultTypes}
-			options={{ label: "LS Types" }}
+			options={{ label: "Lava Spouts (LS)" }}
 		/>
 		<Resource
 			name="tbtypes"
 			{...thargoidTypes}
-			options={{ label: "TB Types" }}
+			options={{ label: "Thargoid Barnacles (TB)" }}
 		/>
 		<Resource
 			name="twtypes"
 			{...defaultTypes}
-			options={{ label: "TW Types" }}
+			options={{ label: "Tube Worms (TW)" }}
 		/>
 	</Admin>
 );
