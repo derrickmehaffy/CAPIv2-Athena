@@ -1,15 +1,15 @@
 const menuStructure = [
     {
-        slug: 'celestial',           // slug used as id for the submenu, has to be unique
-        parent: null,                // parent if you want nested submenus, use slug of parent
-        label: 'Celestial',          // Display label for submenu
+        slug: 'celestial',
+        parent: null,
+        label: 'Celestial',
         resources: [
             'systems',
             'bodies',
             'rings',
             'regions'
-        ],               // resources in this submenu (see console > Redux > State > admin > resources)
-        collapsed: false             // used in state to check if menu is collapsed, leave it alone
+        ],               
+        collapsed: false
     },
 
     {
@@ -53,9 +53,9 @@ const menuStructure = [
             parent: 'sites',               
             label: 'Guardian',           
             resources: [
-//                'gbsites',
-//                'grsites',
-//                'gssites'
+                'gbsites',
+                'grsites',
+                'gssites'
             ],              
             collapsed: false             
         },
@@ -65,8 +65,8 @@ const menuStructure = [
             parent: 'sites',                
             label: 'Thargoid',           
             resources: [
-//                'tbsites',
-//                'tssites'
+                'tbsites',
+                'tssites'
             ],              
             collapsed: false             
         },
@@ -76,17 +76,41 @@ const menuStructure = [
             parent: 'sites',                
             label: 'Orbital',           
             resources: [
-//                'gensites'
+                'gensites'
             ],              
             collapsed: false             
         },
+
+        {
+            slug: 'sites_meta',
+            parent: 'sites',
+            label: 'Site Metadata',
+            resources: [],
+            collapsed: false
+        },
+
+            {
+                slug: 'site_meta_guardian_ruins',
+                parent: 'sites_meta',
+                label: 'Guardian Ruins',
+                resources: [],
+                collapsed: false
+            },
+
+            {
+                slug: 'site_meta_guardian_structures',
+                parent: 'sites_meta',
+                label: 'Guardian Structures',
+                resources: [],              
+                collapsed: false
+            },
 
     {
         slug: 'reports',            // slug used as id for the submenu, has to be unique
         parent: null,               // parent if you want nested submenus, use slug of parent
         label: 'Reports',           // Display label for submenu
-        resources: [],                           // resources in this submenu (see console > Redux > State > admin > resources)
-        collapsed: false             // used in state to check if menu is collapsed, leave it alone
+        resources: [],              // resources in this submenu (see console > Redux > State > admin > resources)
+        collapsed: false            // used in state to check if menu is collapsed, leave it alone
     },
 
         {

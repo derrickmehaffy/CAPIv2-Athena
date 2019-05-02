@@ -5,7 +5,7 @@ import withStyles from '@material-ui/core/styles/withStyles';
 const styles = {};
 
 const systemList = props => (
-  <List {...props} sort={{ field: 'id', order: 'ASC' }}>
+  <List {...props} sort={{ field: 'id', order: 'ASC' }} perPage={100}>
     <Datagrid>
       <NumberField source="id" label="ID" textAlign="left" />
       <TextField source="systemName" label="Name" />
