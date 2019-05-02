@@ -14,6 +14,9 @@ import bodies from "./celestial/body";
 import rings from "./celestial/ring";
 import regions from "./celestial/region";
 
+// Sites
+import defaultSites from "./sites/defaultSite"
+
 // Reports
 import defaultReports from "./reports/defaultReport";
 /*
@@ -72,6 +75,56 @@ const App = () => (
 			name="regions"
 			{...regions}
 			options={{ label: "Regions" }} 
+		/>
+		<Resource
+			name="apsites"
+			{...defaultSites}
+			options={{ label: "AP Sites" }}
+		/>
+		<Resource
+			name="bmsites"
+			{...defaultSites}
+			options={{ label: "BM Sites" }}
+		/>
+		<Resource
+			name="btsites"
+			{...defaultSites}
+			options={{ label: "BT Sites" }}
+		/>
+		<Resource
+			name="cssites"
+			{...defaultSites}
+			options={{ label: "CS Sites" }}
+		/>
+		<Resource
+			name="fgsites"
+			{...defaultSites}
+			options={{ label: "FG Sites" }}
+		/>
+		<Resource
+			name="fmsites"
+			{...defaultSites}
+			options={{ label: "FM Sites" }}
+		/>
+		<Resource
+			name="gvsites"
+			{...defaultSites}
+			options={{ label: "GV Sites" }}
+		/>
+		<Resource
+			name="gysites"
+			{...defaultSites}
+			options={{ label: "GY Sites" }}
+		/>
+		<Resource
+			name="lssites"
+			{...defaultSites}
+			options={{ label: "LS Sites" }}
+		/>
+		<Resource
+			name="twsites"
+			{...defaultSites}
+			options={{ label: "TW Sites" }}
 		/>
 		<Resource
 			name="apreports"

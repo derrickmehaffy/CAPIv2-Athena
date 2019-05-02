@@ -1,14 +1,91 @@
 const menuStructure = [
     {
+        slug: 'celestial',           // slug used as id for the submenu, has to be unique
+        parent: null,                // parent if you want nested submenus, use slug of parent
+        label: 'Celestial',          // Display label for submenu
+        resources: [
+            'systems',
+            'bodies',
+            'rings',
+            'regions'
+        ],               // resources in this submenu (see console > Redux > State > admin > resources)
+        collapsed: false             // used in state to check if menu is collapsed, leave it alone
+    },
+
+    {
+        slug: 'sites',               // slug used as id for the submenu, has to be unique
+        parent: null,                // parent if you want nested submenus, use slug of parent
+        label: 'Sites',              // Display label for submenu
+        resources: [],               // resources in this submenu (see console > Redux > State > admin > resources)
+        collapsed: false             // used in state to check if menu is collapsed, leave it alone
+    },
+
+        {
+            slug: 'sites_biology',    
+            parent: 'sites',          
+            label: 'Biology',           
+            resources: [
+                'apsites',
+                'bmsites',
+                'btsites',
+                'fgsites',
+                'twsites'
+            ],              
+            collapsed: false             
+        },
+
+        {
+            slug: 'sites_geology',    
+            parent: 'sites',          
+            label: 'Geology',           
+            resources: [
+                'cssites',
+                'fmsites',
+                'gvsites',
+                'gysites',
+                'lssites'
+            ],              
+            collapsed: false             
+        },
+
+        {
+            slug: 'sites_guardian',            
+            parent: 'sites',               
+            label: 'Guardian',           
+            resources: [
+//                'gbsites',
+//                'grsites',
+//                'gssites'
+            ],              
+            collapsed: false             
+        },
+
+        {
+            slug: 'sites_thargoid',            
+            parent: 'sites',                
+            label: 'Thargoid',           
+            resources: [
+//                'tbsites',
+//                'tssites'
+            ],              
+            collapsed: false             
+        },
+
+        {
+            slug: 'sites_orbital',            
+            parent: 'sites',                
+            label: 'Orbital',           
+            resources: [
+//                'gensites'
+            ],              
+            collapsed: false             
+        },
+
+    {
         slug: 'reports',            // slug used as id for the submenu, has to be unique
         parent: null,               // parent if you want nested submenus, use slug of parent
         label: 'Reports',           // Display label for submenu
-        resources: [
-            'gbreports',
-            'grreports',
-            'gsreports',
-            'tsreports'
-        ],                           // resources in this submenu (see console > Redux > State > admin > resources)
+        resources: [],                           // resources in this submenu (see console > Redux > State > admin > resources)
         collapsed: false             // used in state to check if menu is collapsed, leave it alone
     },
 
@@ -21,7 +98,6 @@ const menuStructure = [
                 'bmreports',
                 'btreports',
                 'fgreports',
-                'tbreports',
                 'twreports'
             ],              
             collapsed: false             
@@ -45,7 +121,11 @@ const menuStructure = [
             slug: 'reports_guardian',            
             parent: 'reports',               
             label: 'Guardian',           
-            resources: [],              
+            resources: [
+                'gbreports',
+                'grreports',
+                'gsreports'
+            ],              
             collapsed: false             
         },
 
@@ -53,7 +133,10 @@ const menuStructure = [
             slug: 'reports_thargoid',            
             parent: 'reports',                
             label: 'Thargoid',           
-            resources: [],              
+            resources: [
+                'tbreports',
+                'tsreports'
+            ],              
             collapsed: false             
         },
 
@@ -61,7 +144,9 @@ const menuStructure = [
             slug: 'reports_orbital',            
             parent: 'reports',                
             label: 'Orbital',           
-            resources: [],              
+            resources: [
+//                'genreports'
+            ],              
             collapsed: false             
         },
 
